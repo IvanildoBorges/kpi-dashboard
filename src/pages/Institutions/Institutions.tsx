@@ -2,7 +2,7 @@ import {
     InstitutionsContainer 
 } from "./style";
 
-export default function Dashboard() {
+export default function Institutions() {
     return (
         <InstitutionsContainer className="section section-title">
             <div className="container">

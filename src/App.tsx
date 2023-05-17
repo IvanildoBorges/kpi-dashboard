@@ -1,6 +1,6 @@
-import MobileMenu from "./components/MobileMenu"
-import NavBar from "./components/layout/NavBar"
-import Dashboard from "./pages/Dashboard/Dashboard";
+import { Outlet } from "react-router-dom";
+import MobileMenu from "./components/MobileMenu";
+import NavBar from "./components/layout/NavBar";
 
 function App() {
 
@@ -25,7 +25,7 @@ function App() {
         <MobileMenu funcao={toggleMenu}/>
         <NavBar funcaoToggle={toggleMenu} />
       </header>
-      <Dashboard />
+      <Outlet />
     </>
   )
 }

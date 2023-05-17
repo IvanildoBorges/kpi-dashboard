@@ -2,7 +2,7 @@ import {
     SettingsAccountContainer 
 } from "./style";
 
-export default function Dashboard() {
+export default function SettingsAccount() {
     return (
         <SettingsAccountContainer className="section section-title">
             <div className="container">

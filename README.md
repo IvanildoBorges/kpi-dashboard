@@ -25,6 +25,9 @@ Foi Criar o layout incial do cabeçalho (NavBar e MobileMenu). Nessa parte, foi 
 Nessa etapa optei em adicionar roteamento, assim, dependendo de qual botão o usuário clique, ele será direcionado para a tela respectiva. Para isso, foi instalado o pacote com o comando abaixo e criado também as telas:
 npm install react-router-dom
 
+### Quarta etapa 
+Criar o arquivo de configuração de rotas para o componente Main possa gerenciar. Também foi alterado algumas pages por conta que algumas estavam nomeadas de forma repetida. Para isso, utilizou do componente Outlet no App, para ele servir de molde para todas as paginas, e o routes foi colocado no Main com uso de um componente do router-DOM, paraque ele pudesse gerenciar as rotas.
+
 
 
 ## Dificuldades e desafios que tive
