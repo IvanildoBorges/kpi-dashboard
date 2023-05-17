@@ -11,6 +11,24 @@ const Global = createGlobalStyle`
         text-decoration: none;
     }
 
+    html, body {
+        overflow-x: hidden;
+    }
+
+    html {
+        font-size: 1rem;
+        scroll-behavior: smooth;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
     /* ------------- VARIÁVEIS DO PROJETO ------------- */
     :root {
         /* Fontes */
@@ -25,7 +43,7 @@ const Global = createGlobalStyle`
         --font-text: 1rem;
         --font-legend: 0.875rem;
 
-        /* colors */
+        /* Cores */
         --first-color: #004FA1;
         --second-color: #03681D;
         --color-black: #303030;
@@ -35,10 +53,10 @@ const Global = createGlobalStyle`
         --color-gray: #6D6C72;
 
 
-        /* Variables */
+        /* Variavéis */
         --theme-color: var(--color-black);
         --primary-color: var(--first-color);
-        --secundary-color: var(--second-color);
+        --secundary-color: var(--color-white);
         --title-color: var(--color-white);
         --subtitle-color: var(--color-lightGray);
         --text-color: var(--color-white);
@@ -106,7 +124,7 @@ const Global = createGlobalStyle`
     body.dark-theme {
         --theme-color: var(--color-black);
         --primary-color: var(--first-color);
-        --secundary-color: var(--second-color);
+        --secundary-color: var(--color-white);
         --title-color: var(--color-white);
         --subtitle-color: var(--color-lightGray);
         --text-color: var(--color-white);
@@ -121,7 +139,7 @@ const Global = createGlobalStyle`
         :root {
             --theme-color: var(--color-white);
             --primary-color: var(--first-color);
-            --secundary-color: var(--second-color);
+            --secundary-color: var(--first-color);
             --title-color: var(--color-black);
             --subtitle-color: var(--color-gray);
             --text-color: var(--color-black);
@@ -143,11 +161,6 @@ const Global = createGlobalStyle`
             width: 100%;
         }
     }
-    @media screen and (min-width: 1024px) {
-        .section {
-            padding-top: 3rem;
-        }
-    }
 
     /* CONTAINER */
     .container {
@@ -157,18 +170,43 @@ const Global = createGlobalStyle`
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 0;
+        padding: 5rem 2rem 2rem;
         margin: 0 auto;
     }
     @media screen and (min-width: 610px) {
         .container {
             flex-direction: row;
             justify-content: space-between;
+            padding: 2.4rem 2.4rem 5rem;
+            margin: 0 10.5rem;
         }
     }
     @media screen and (min-width: 1024px) {
         .container {
             max-width: 99.2rem;
+            padding: 2.4rem 0 3rem;
+        }
+    }
+
+    /* HEADER */
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        display: block;
+        padding-top: 1rem;
+        background-color: transparent;
+    }
+    @media screen and (min-width: 610px) {
+        .header {
+            //
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        .header {
+            padding-top: 0;
+            bottom: 0;
         }
     }
 `;
