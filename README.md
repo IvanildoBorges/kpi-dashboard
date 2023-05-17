@@ -21,6 +21,10 @@ Foi feita a estruturação da aplicação
 ### Segunda etapa 
 Foi Criar o layout incial do cabeçalho (NavBar e MobileMenu). Nessa parte, foi proposto o design tanto mobile, quanto o desktop, prezando pela UI e pela UX. Cores foram adicionadas de acordo com a acessibilidade e o constrate. Também foi proposto dois temas, para se adequar ao modo dark do dispositivo. Por fim, foi proposto um tema base para implamentação de PWA, futuramente. Ah, tanto a respomsividade, quanto as animações, seguem boas práticas.
 
+### Terceira etapa 
+Nessa etapa optei em adicionar roteamento, assim, dependendo de qual botão o usuário clique, ele será direcionado para a tela respectiva. Para isso, foi instalado o pacote com o comando abaixo e criado também as telas:
+npm install react-router-dom
+
 
 
 ## Dificuldades e desafios que tive

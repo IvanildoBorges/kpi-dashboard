@@ -1,5 +1,6 @@
 import MobileMenu from "./components/MobileMenu"
 import NavBar from "./components/layout/NavBar"
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
 
@@ -24,11 +25,7 @@ function App() {
         <MobileMenu funcao={toggleMenu}/>
         <NavBar funcaoToggle={toggleMenu} />
       </header>
-      <div className="section">
-        <div className="container">
-          <h1 className="title">KPI Dashboard</h1>
-        </div>
-      </div>
+      <Dashboard />
     </>
   )
 }
