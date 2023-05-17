@@ -126,6 +126,7 @@ const NavBar = ({ funcaoToggle = () => {} }: Props) => {
     const items: NavItemType[] = [
         {
             titulo: "Dashboard",
+            url: '/',
             icon: <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     height="48" 
@@ -138,6 +139,7 @@ const NavBar = ({ funcaoToggle = () => {} }: Props) => {
         },
         {
             titulo: "Institutions",
+            url: '/institutions',
             icon: <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     height="48" 
@@ -150,6 +152,7 @@ const NavBar = ({ funcaoToggle = () => {} }: Props) => {
         },
         {
             titulo: "KPIs",
+            url: '/kpis',
             icon: <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     height="48" 
@@ -208,9 +211,9 @@ const NavBar = ({ funcaoToggle = () => {} }: Props) => {
             return index === 0
                 ?   <li className="item" key={index}>   {/* item incial ativado */}
                         <NavItem 
-                            classe="active"
                             title={item.titulo} 
                             icon={item.icon}
+                            url={item.url}
                             funcao={() => {
                                 verificaItemAtivo(index);
                                 funcaoToggle();
@@ -220,6 +223,7 @@ const NavBar = ({ funcaoToggle = () => {} }: Props) => {
                         <NavItem 
                             title={item.titulo} 
                             icon={item.icon}
+                            url={item.url}
                             funcao={() => {
                                 verificaItemAtivo(index);
                                 funcaoToggle();
@@ -230,11 +234,14 @@ const NavBar = ({ funcaoToggle = () => {} }: Props) => {
 
     //Função quer gera lista de botões de icones
     const geraButtonsIcons = (): JSX.Element[] => {
+        const urlString: string[] = ['/settings-account', '/notifications', '/profile'];
+
         return icons.map((icon, index) => {
                 return (
                     <NavItem 
                         icon={icon} 
                         key={index} 
+                        url={urlString[index]}
                         funcao={ () => {
                             verificaItemAtivo(tamanho+index);
                             funcaoToggle();

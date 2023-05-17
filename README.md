@@ -29,5 +29,11 @@ npm install react-router-dom
 Criar o arquivo de configuração de rotas para o componente Main possa gerenciar. Também foi alterado algumas pages por conta que algumas estavam nomeadas de forma repetida. Para isso, utilizou do componente Outlet no App, para ele servir de molde para todas as paginas, e o routes foi colocado no Main com uso de um componente do router-DOM, paraque ele pudesse gerenciar as rotas.
 
 
+### Quinta etapa 
+Nessa etapa, foi preciso ajustar os NavItens para que pudessem transitar entre as telas, fazendo assim o roteamento do site. Alterado o NavItemModel para adicionar a propriedade de url, que é nada mais do que a url para qual irá ser redirecionado o usuário, ao clicar num navItem.
+
+
+
+
 
 ## Dificuldades e desafios que tive

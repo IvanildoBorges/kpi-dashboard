@@ -1,15 +1,17 @@
 import { styled } from "styled-components";
+import { NavLink } from 'react-router-dom'
 
 // Propriedades aceitas pelo componente
 type Props = {
     classe?: string,
     title?: string,
     icon: JSX.Element,
+    url: string,
     funcao?: () => void
 }
 
 // Estilo do componente
-const Item = styled.div`
+const Item = styled(NavLink)`
     //Estilo dos itens
     &.nav-item {
         height: 100%;
@@ -22,6 +24,7 @@ const Item = styled.div`
         transition: all .3s ease-in;
         background-color: transparent;
         transition: background-color .3s ease-in;
+        color: var(--color-white);
         cursor: pointer;
     }
     //dimensões dos icones
@@ -74,9 +77,9 @@ const Item = styled.div`
     }
 `;
 
-const NavItem = ({ classe = '', title = '', icon = <></>, funcao = () => {} }: Props) => {
+const NavItem = ({ classe = '', title = '', icon = <></>, funcao = () => {}, url }: Props) => {
     return (
-        <Item className={"nav-item "+classe} onClick={funcao}>
+        <Item to={url} className={"nav-item "+classe} onClick={funcao}>
             {icon}
             <span>{title}</span>
         </Item>
