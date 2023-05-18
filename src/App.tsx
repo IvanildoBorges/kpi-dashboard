@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import MobileMenu from "./components/MobileMenu";
 import NavBar from "./components/layout/NavBar";
+import Header from "./components/layout/Header";
 
 function App() {
 
@@ -21,10 +22,10 @@ function App() {
   
   return (
     <>
-      <header className='section header'>
+      <Header>
         <MobileMenu funcao={toggleMenu}/>
         <NavBar funcaoToggle={toggleMenu} />
-      </header>
+      </Header>
       <Outlet />
     </>
   )

@@ -1,13 +1,18 @@
+import SectionTitle from "../../components/SectionTitle";
+import Container from "../../components/layout/Container";
+import Section from "../../components/layout/Section";
 import { 
     SettingsAccountContainer 
 } from "./style";
 
 export default function SettingsAccount() {
     return (
-        <SettingsAccountContainer className="section section-title">
-            <div className="container">
-                <h1 className="title">Settings</h1>
-            </div>
+        <SettingsAccountContainer>
+            <Section classe="settings">
+                <Container>
+                    <SectionTitle titulo="Settings" />
+                </Container>
+            </Section>
         </SettingsAccountContainer>
     );
 }

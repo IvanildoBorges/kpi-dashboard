@@ -1,13 +1,18 @@
+import SectionTitle from "../../components/SectionTitle";
+import Container from "../../components/layout/Container";
+import Section from "../../components/layout/Section";
 import { 
     ProfileContainer 
 } from "./style";
 
 export default function Profile() {
     return (
-        <ProfileContainer className="section section-title">
-            <div className="container">
-                <h1 className="title">Profile</h1>
-            </div>
+        <ProfileContainer>
+            <Section classe="profile">
+                <Container>
+                    <SectionTitle titulo="Profile" />
+                </Container>
+            </Section>
         </ProfileContainer>
     );
 }
