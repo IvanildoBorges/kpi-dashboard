@@ -14,21 +14,21 @@ const ContainerBox = styled.div`
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 5rem 2rem 2rem;
+        padding: 5rem 2rem 1rem;
         margin: 0 auto;
     }
     @media screen and (min-width: 610px) {
         &.container {
             flex-direction: row;
             justify-content: space-between;
-            padding: 2.4rem 2.4rem 5rem;
-            margin: 0 10.5rem;
+            padding: 5rem 3rem 1.5rem;
+            margin: 0;
         }
     }
     @media screen and (min-width: 1024px) {
         &.container {
-            max-width: 99.2rem;
-            padding: 2.4rem 0 3rem;
+            max-width: 115rem;
+            padding: 2.5rem 0 2rem 13rem;
         }
     }
 `;

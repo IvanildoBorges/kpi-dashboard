@@ -43,6 +43,9 @@ Nessa etapa, foi preciso ajustar os NavItens para que pudessem transitar entre a
 ### Sexta etapa 
 Nessa parte foi preciso remover do estilo global os estilos reutilizaveis, transformando eles em componentes.
 
+### Sétima etapa 
+Inicio do dashboard, comtemplado a seção de titulo e dois botões
+
 
 
 

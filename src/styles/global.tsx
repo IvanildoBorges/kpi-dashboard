@@ -42,6 +42,7 @@ const Global = createGlobalStyle`
         --font-subtitle: 1.25rem;
         --font-text: 1rem;
         --font-legend: 0.875rem;
+        --font-legend-small: 0.75rem;
 
         /* Cores */
         --first-color: #004FA1;

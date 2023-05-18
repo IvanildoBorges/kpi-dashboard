@@ -84,6 +84,7 @@ const Nav = styled.div`
         //Estilo da navbar
         &.nav-container {
             display: block;
+            width: auto;
             height: 100vh;
             transform: translateX(0);
         }
