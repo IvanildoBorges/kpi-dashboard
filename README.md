@@ -7,6 +7,10 @@
  * Quais das mulheres possuem mais de 18 anos.
 
 
+## Aplicação rodando live, link abaixo:
+[Ir para KPI-Dashboard](https://app-kpi-dashboard.onrender.com/)
+
+
 ## Getting started
 Primeiro, foi escolhido o framework ViteJS para uso da biblioteca React na sua versão em Typescript. Os arquivos foram estruturados em pastas seguindo uma adpatção do padrão MVC com componentização funcional.
 
