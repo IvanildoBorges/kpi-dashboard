@@ -60,3 +60,5 @@ Foi criado o service para consumir a api e utilizar nos cards. Também foi preci
 
 
 ## Dificuldades e desafios que tive
+A primeira foi por conta do PC que trava um pouco, fiz o máximo com o que eu tinha.
+O que acarretou de não conseguir fazer a parte dos gráficos. Porém, os cards estão informativos, ainda apliquei responsividade ao aplicativo e coloquei esquema de tema dark.
