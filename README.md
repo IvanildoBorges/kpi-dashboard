@@ -46,6 +46,9 @@ Nessa parte foi preciso remover do estilo global os estilos reutilizaveis, trans
 ### Sétima etapa 
 Inicio do dashboard, comtemplado a seção de titulo e dois botões
 
+### Oitava etapa 
+Criar os cards e alterar as cores por conta da acessibilidade
+
 
 
 

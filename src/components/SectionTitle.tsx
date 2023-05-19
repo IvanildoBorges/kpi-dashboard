@@ -7,7 +7,19 @@ type Props = {
 //Estilo da Seção de Titulo
 const ContainerTitle = styled.div`
     &.section-title {
-        //
+        margin-bottom: 1rem;
+        width: 100%;
+        background-color: var(--theme-color);
+        text-align: center;
+    }
+
+    //versão tablet
+    @media screen and (min-width: 610px) {
+        &.section-title {
+            margin-bottom: 0;
+            width: auto;
+            text-align: left;
+        }
     }
 `;
 

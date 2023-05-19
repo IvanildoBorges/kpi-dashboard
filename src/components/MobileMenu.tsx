@@ -10,18 +10,17 @@ const MenuButton = styled.div`
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        padding:1rem  0.5rem 0.5rem;
         display: block;
         transform: translate(-100% 75%);
-        background-color: var(--color-white);
         z-index: 10;
     }
     &.button-menu > .mobile-menu {
         display: block;
-        width: 3rem;
-        height: 3rem;
-        cursor: pointer;    
+        width: auto;
+        height: auto;
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--theme-color); 
     }
     &.button-menu > .mobile-menu > div {
         width: 2rem;
@@ -30,6 +29,12 @@ const MenuButton = styled.div`
         background-color: var(--primary-color);
         margin: 0.5rem;
         transition: .3s;
+    }
+    &.button-menu > .mobile-menu.active {
+        background-color: var(--primary-color);
+    }
+    &.button-menu > .mobile-menu.active > div {
+        background-color: var(--color-white);
     }
     &.button-menu > .mobile-menu.active > .line1 {
         transform: rotate(-50deg) translate(-9px, 9px);

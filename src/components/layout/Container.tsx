@@ -14,14 +14,14 @@ const ContainerBox = styled.div`
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 5rem 2rem 1rem;
+        padding: 1.5rem 2rem 2rem;
         margin: 0 auto;
     }
     @media screen and (min-width: 610px) {
         &.container {
             flex-direction: row;
             justify-content: space-between;
-            padding: 5rem 3rem 1.5rem;
+            padding: 0 3rem 3rem;
             margin: 0;
         }
     }
