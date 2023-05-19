@@ -49,6 +49,9 @@ Inicio do dashboard, comtemplado a seção de titulo e dois botões
 ### Oitava etapa 
 Criar os cards e alterar as cores por conta da acessibilidade
 
+### Nona etapa 
+Foi criado o service para consumir a api e utilizar nos cards. Também foi preciso alterar a model Card e criar novas models de personagem e totalPersonData.
+
 
 
 
